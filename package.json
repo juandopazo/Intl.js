@@ -15,11 +15,13 @@
     "grunt-cli": "~0.1.13",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-connect": "^0.10.1",
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-curl": "^2.1.0",
     "grunt-extract-cldr-data": "^2.1.1",
+    "grunt-saucelabs": "^8.6.0",
     "grunt-zip": "^0.16.2",
     "jshint": "^2.5.5",
     "object.assign": "^1.1.1",
@@ -27,7 +29,8 @@
   },
   "scripts": {
     "pretest": "grunt jshint",
-    "test": "cd tests && node noderunner.js && node saucelabs.js"
+    "test": "node ./tests/noderunner.js",
+    "travis": "node ./tests/noderunner.js && node ./tests/saucelabs.sh"
   },
   "repository": {
     "type": "git",

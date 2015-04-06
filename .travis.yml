@@ -2,9 +2,9 @@ language: node_js
 node_js:
   - '0.10'
   - '0.12'
+script: npm run travis
 
-addons:
-  sauce_connect:
-    username: andyearnshaw
-    access_key:
-      secure: 'OslPEaqVgNH+9YWwtEIJE4/Ot+RmSonIYMxvxMjnaaLAkoYX34nJzaB8vPFP1txDwkDHpOy+MiQ8hKYhyilw5Ydr11O2IEuhVjcJThKSoN3yMTe6FHpXQKO9uC1loaRwJs2uV0go+P4ooywZ8Y72/RtKXk0OOhn5Lg5ekb3wMRg='
+env:
+  global:
+    - secure: osc30M9IPpHH/2WUf7604AmebhSLbVuj1abALP4W2PyOYfHjnZD3I2R4+hBN3flYkyOORycrr7rkWrkZVzbg0ENu1xVWM4ohc+S338VbgkldJWx9Ue4tHt45nFYgH5RnMMjDcGrwmtQ3mPOZoit4g6mkqnLZ7YuyI4WGPUPCgHs=
+    - secure: I975bAbgDitEqKDJzjpvqv91TIVUwkd8hW/L4tJDWi7ATbyKSP8bkYkH4dFMGtQxDFd6dPGboUiDF3nVnwMPbP2zlZhvWDIZpCjSm3Ap+51Sz+BAebEjvbSnJnBxk2pJJqTDMcJ8UDFpcsqSwT8rY55ZmfXdAMcH2ejX3l26V+U=
